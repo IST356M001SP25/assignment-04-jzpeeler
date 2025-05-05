@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  Jonah Peeler
+Sudent Email:  jzpeeler@syr.edu
 
 ## Instructions
 
@@ -23,3 +23,4 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+This assignment helped me learn about how to use streamlit to filter and load data from different data types, and then display information about those datasets. I initially had challenges with some of the tests but I changes lines=True to what it is now and that fixed the issue I was having with the tests. This assignment got me to understand what goes on when importing data into a streamlit program.

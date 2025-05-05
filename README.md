@@ -76,7 +76,7 @@ start by writing the functions in this file. They are ordered from easiest to mo
 - You need two drop down widgets for the filter: object column names and  unique values in that column
 - display the dataframe filtered by rows / columns
 - descrived the dataframe (again the one filtered by row/columns)
-
+                  
 ## Commit Requirements
 
 This assignment requires a minimum of 2 git commits. One suggestion is to commit after you complete a coding session (whether your code works or not.) At minimum you should commit after you complete `pandaslib.py` then again after `unibrow.py` 

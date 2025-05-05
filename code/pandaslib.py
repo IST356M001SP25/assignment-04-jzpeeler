@@ -40,24 +40,17 @@ def get_file_extension(file_path : str) -> str:
     '/home/important_grades.xlsx' -> 'xlsx'
     'countries.json' -> 'json'
     '''
-    return os.path.splittext(file_path)[1][1:]
+    return os.path.splitext(file_path)[1][1:]
 
 def load_file(file_path: str, ext: str) -> pd.DataFrame:
-    '''
-    Load a file into a pandas dataframe assumed the file type from the extension
-    return a pandas dataframe
-    only suppose csv, excel and json file extensions
-    - when csv assume first row is header
-    - when json assume record-oriented data
-    '''
-    if ext =='csv':
+    if ext == 'csv':
         return pd.read_csv(file_path)
-    elif ext in ['xlsx', 'xls']:
+    elif ext == 'xlsx':
         return pd.read_excel(file_path)
     elif ext == 'json':
-        return pd.read_json(file_path, lines=True)
+        return pd.read_json(file_path)
     else:
-        raise ValueError(f"Unsupported file extension: {ext}")
+        raise ValueError("Unsupported file type")
     
 
 if __name__ == '__main__':
